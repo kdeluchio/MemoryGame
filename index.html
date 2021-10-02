@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Memory Game</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <header>
+            Memory Game
+        </header>
+		<main>
+            <div class="board"></div>
+		</main>
+		<footer>
+		</footer>
+
+        <script src="js/app/models/MemoryGame.js"></script>
+        <script src="js/app/controllers/MemoryGameController.js"></script>
+        <script>
+            
+            const controller = new MemoryGameController();
+            controller.draw();
+            controller.subscribeCardEvent();
+
+        </script>
+    </body>
+</html>
